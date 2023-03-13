@@ -44,7 +44,7 @@ li {
     transition: 0.3s ease;
 }
 .menu li {
-    padding: 5px 14px;
+    padding: 8px 14px;
 }
 
 /* dropdown menu */
@@ -53,7 +53,7 @@ li {
 }
 
 .dropdown {
-    background-color: beige;
+    background-color: wheat;
     padding: 1em 0;
     position: 1em 0;
     position: absolute; 

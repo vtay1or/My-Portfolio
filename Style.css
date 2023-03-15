@@ -1,3 +1,6 @@
+body, html {
+    height: 100%;
+}
 /* utilitties */
 * {
     margin: 0;
@@ -5,7 +8,7 @@
     box-sizing: border-box;
 }
 
-a {
+li a {
     text-decoration: none;
 }
 
@@ -124,4 +127,42 @@ input[type=checkbox] {
     .dropdown li:hover {
         background-color: goldenrod;
     }
+}
+
+/* hero */
+.hero-image {
+    background-image: url("office.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    background-color: #fff;
+    top: 15%;
+    right: 15%;
+    color: black
+}
+
+.flex-container  {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.flex-container > * {
+    flex: 0 0 auto;
+}
+
+
+.flex-item {
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
 }

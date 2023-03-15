@@ -156,10 +156,6 @@ input[type=checkbox] {
     width: 100%;
 }
 
-.flex-container > * {
-    flex: 0 0 auto;
-}
-
 
 .flex-item {
     width: auto;

@@ -154,11 +154,20 @@ input[type=checkbox] {
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: stretch;
 }
 
 
 .flex-item {
+    flex-direction: row;
+    flex-grow: 1;
     width: auto;
     align-items: center;
     justify-content: space-between;
+}
+
+.flex-item img {
+    width: 5em;
+    height: auto;
+    margin: 1em;
 }

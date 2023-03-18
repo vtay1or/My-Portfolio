@@ -15,13 +15,13 @@ li a {
 li {
     list-style: none;
 }
-
 /* navbar styling */
 .navbar {
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: darkolivegreen;
+    background-color: #003744;
     padding: 20px;
     color: #fff;
 }
@@ -42,7 +42,7 @@ li {
     font-size: 18px;
 }
 .menu li:hover {
-    background-color: darkolivegreen;
+    background-color: #41CEE0;
     border-radius: 5px;
     transition: 0.3s ease;
 }
@@ -56,7 +56,7 @@ li {
 }
 
 .dropdown {
-    background-color: wheat;
+    background-color: #41CEE0;
     padding: 1em 0;
     position: 1em 0;
     position: absolute; 
@@ -74,7 +74,7 @@ li {
     text-align: center;
 }
 .dropdown li:hover {
-    background-color: darkolivegreen;
+    background-color: #003744;
 }
 .services:hover .dropdown {
     display: block;
@@ -99,7 +99,7 @@ input[type=checkbox] {
     .menu {
         display: none;
         position: absolute;
-        background-color: darkolivegreen;
+        background-color: #003744;
         right: 0;
         left: 0;
         text-align:center;
@@ -125,15 +125,25 @@ input[type=checkbox] {
         transform: translateX(35%);
     }
     .dropdown li:hover {
-        background-color: goldenrod;
+        background-color: #C3E240;
     }
 }
 
 /* hero */
+.hero {
+    display: flex;
+    background-image: url("/images/GDES_221_SPRING2022_DIGITAL_IDEA_BOOK_UPDATED_VICTORIA_TAYLOR-26.jpg");
+    background-size: 90%;
+    height: 50%;
+    width: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+}
 .hero-image {
-    background-image: url("/images/Office.jpg");
     height: 100%;
-    background-position: center;
+    width: 50%;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -142,13 +152,23 @@ input[type=checkbox] {
 .hero-text-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    position: relative;
-    background-color: #fff;
+    align-items: center;
+    justify-content: center;
     top: 15%;
     right: 15%;
+    height: 100%;
+    width: 50%;
     color: black
 }
+
+button {
+    background-color: #fff;
+    color: #41CEE0;
+    border-color: #41CEE0;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 25px;
+  }
 
 .article-container {
     display: flex;
@@ -202,4 +222,8 @@ input[type=checkbox] {
     font-size: 1em;
     height: auto;
     width: 35vw;
+}
+
+.footer {
+    color: #41CEE0;
 }

@@ -122,6 +122,9 @@ input[type=checkbox] {
         top: 30px;
         transform: translateX(35%);
     }
+    .content-container {
+        flex-direction: column;
+    }
 
 }
 
@@ -169,9 +172,11 @@ button {
 
 .article-container {
     display: flex;
-    flex-wrap: wrap;
     margin: 35px;
+    flex-wrap: wrap;
     justify-content: stretch;
+    align-items: center;  
+    color: #003744;
 }
 
 .article {
@@ -187,12 +192,11 @@ button {
     border-radius: 15px;
 }
 
-.article h3 {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    color: white;
-    justify-content: center;   
+.article-container h3 {
+    color: #003744;
+    align-items: center;
 }
+
 .article a {
     display: flex;
     text-decoration: none;
@@ -201,36 +205,84 @@ button {
     justify-content: flex-end;
 }
 
-.seemore {
+.article-button {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
 }
 
 .content-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
     background-color: #003744;
+    align-items: center;
 }
 .content {
-    margin: 5em;
+    margin: 1em;
 }
 .content img {
     height: auto;
-    width: 20em;
-    margin: auto auto auto 0;
+    width: 45%;
+    margin: 0;
     border-radius: 15px;
+    align-self: center;
 }
 .content p {
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 1em;
     height: auto;
-    width: 35vw;
+    width: 35%;
 }
 .content h3 {
     color: #fff;
 }
 
+.social {
+    padding: 2em;
+}
+.social h3 {
+    color:#41CEE0
+}
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .footer {
+    background-color: #003744;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: row;
     color: #41CEE0;
+    justify-content: center;
+}
+.footer-item a {
+    padding: 1em;
+    color: white;
+}
+.footer-list li:hover {
+    background-color: #41CEE0;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    color: white;
+}
+
+.footer-list li {
+    padding: 8px 8px;
+}
+.footer-item a:hover {
+    color: white;
+}
+.copyright {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+}
+hr {
+    color: #fff;
 }

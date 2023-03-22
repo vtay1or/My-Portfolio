@@ -136,9 +136,8 @@ input[type=checkbox] {
     }
     .content-container {
         flex-direction: column;
-        padding: 2em;
     }
-
+    
 }
 
 /* hero */
@@ -198,8 +197,7 @@ h3 {
 }
 .article-container {
     display: flex;
-    margin: 25
-px;
+    margin: 25px;
     flex-wrap: nowrap;
     justify-content: stretch;
     align-items: center;  

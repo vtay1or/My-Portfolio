@@ -49,6 +49,7 @@ li {
     display: flex;
     gap: 1em;
     font-size: 18px;
+    background-color: #003744;
 }
 .menu li:hover {
     background-color: #41CEE0;
@@ -57,6 +58,7 @@ li {
 }
 .menu li {
     padding: 8px 14px;
+    background-color: #003744;
 }
 
 /* dropdown menu */
@@ -65,7 +67,7 @@ li {
 }
 
 .dropdown {
-    background-color: #41CEE0;
+    background-color: #003744;
     padding: 1em 0;
     position: 1em 0;
     position: absolute; 
@@ -84,7 +86,7 @@ li {
     text-align: center;
 }
 .dropdown li:hover {
-    background-color: #003744;
+    background-color: #41CEE0;
 }
 .services:hover .dropdown {
     display: block;
@@ -134,6 +136,7 @@ input[type=checkbox] {
     }
     .content-container {
         flex-direction: column;
+        padding: 2em;
     }
 
 }
@@ -191,11 +194,12 @@ button {
 
 h3 {
     text-align: center;
-    color: #C3E240;
+    color: #41CEE0;
 }
 .article-container {
     display: flex;
-    margin: 35px;
+    margin: 25
+px;
     flex-wrap: nowrap;
     justify-content: stretch;
     align-items: center;  
@@ -203,16 +207,18 @@ h3 {
 }
 
 .article {
-        display: flex;
-        flex-grow: 1;
-        margin: 0 15px 0 15px;
-        width: 13em;
-        height: 30vw;
-        overflow: hidden;
+    display: flex;
+    flex-grow: 1;
+    margin: 0 15px 0 15px;
+    width: 13em;
+    weight: 30vw;
+    overflow: hidden;
 }
 
 .article img {
-    width: 100%;
+    /* width: 100%; */
+    height:auto;
+    max-width: 100%;
     justify-content: center;
     border-radius: 15px;
 }
@@ -252,9 +258,11 @@ h3 {
 .social {
     padding: 2em;
 }
-.social h3 {
-    color:#41CEE0
+ .social h3 {
+    color:#41CEE0;
+    padding: 2em;
 }
+
 .social-links {
     display: flex;
     flex-direction: row;
@@ -289,6 +297,8 @@ h3 {
     color: #41CEE0;
     justify-content: center;
 }
-hr {
-    color: #003744;
+
+.copyright {
+    font-size: small;
+    padding: 1em;
 }

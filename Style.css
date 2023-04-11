@@ -1,5 +1,7 @@
 body, html {
     height: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 3em;
 }
 /* utilitties */
 * {
@@ -15,15 +17,19 @@ li a {
 li {
     list-style: none;
 }
-
 /* navbar styling */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: darkolivegreen;
-    padding: 20px;
+    background-color: rgb(0, 55, 68);
     color: #fff;
+    padding: 0% 1em;
+    position: fixed;
+    top:0%;
+    left:0%;
+    right:0%;
+    z-index: 10;
 }
 
 .nav-links a {
@@ -33,21 +39,26 @@ li {
 /* logo */
 .logo {
     font-size: 32px;
+    padding: 0%;
 }
-
+.logo img {
+    width: 3em;
+}
 /* navbar menu */
 .menu {
     display: flex;
     gap: 1em;
     font-size: 18px;
+    background-color: #003744;
 }
 .menu li:hover {
-    background-color: darkolivegreen;
-    border-radius: 5px;
+    background-color: #41CEE0;
+    border-radius: 25px;
     transition: 0.3s ease;
 }
 .menu li {
     padding: 8px 14px;
+    background-color: #003744;
 }
 
 /* dropdown menu */
@@ -56,13 +67,14 @@ li {
 }
 
 .dropdown {
-    background-color: wheat;
+    background-color: #003744;
     padding: 1em 0;
     position: 1em 0;
     position: absolute; 
     display: none;
-    border-radius: 8px;
+    border-radius: 25px;
     top: 35px;
+    margin-left: -14px;
 }
  
 /* .dropdown li + li {
@@ -74,7 +86,7 @@ li {
     text-align: center;
 }
 .dropdown li:hover {
-    background-color: darkolivegreen;
+    background-color: #41CEE0;
 }
 .services:hover .dropdown {
     display: block;
@@ -99,7 +111,6 @@ input[type=checkbox] {
     .menu {
         display: none;
         position: absolute;
-        background-color: darkolivegreen;
         right: 0;
         left: 0;
         text-align:center;
@@ -107,7 +118,6 @@ input[type=checkbox] {
     }
     .menu li:hover {
         display: inline-block;
-        background-color: goldenrod;
         transition: 0.3s ease;
     }
     .menu li + li {
@@ -124,16 +134,27 @@ input[type=checkbox] {
         top: 30px;
         transform: translateX(35%);
     }
-    .dropdown li:hover {
-        background-color: goldenrod;
+    .content-container {
+        flex-direction: column;
     }
+    
 }
 
 /* hero */
+.hero {
+    display: flex;
+    background-image: url("/images/GDES_221_SPRING2022_DIGITAL_IDEA_BOOK_UPDATED_VICTORIA_TAYLOR-26.jpg");
+    background-size: 90%;
+    height: 50%;
+    width: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+}
 .hero-image {
-    background-image: url("office.jpg");
     height: 100%;
-    background-position: center;
+    width: 50%;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -142,32 +163,231 @@ input[type=checkbox] {
 .hero-text-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    position: relative;
-    background-color: #fff;
+    align-items: center;
+    justify-content: center;
     top: 15%;
     right: 15%;
+    height: 100%;
+    width: 50%;
     color: black
+    
 }
 
-.flex-container  {
+button {
+    background-color: #fff;
+    color: #41CEE0;
+    border-color: #41CEE0;
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 25px;
+  }
+
+  button:hover {
+    background-color: #C3E240;
+    border-radius: 25px;
+    transition: 0.3s ease;
+    border-color: #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;
+    color: #41CEE0;
+}
+.article-container {
+    display: flex;
+    margin: 25px;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    align-items: center;  
+    color: #003744;
+}
+
+.article {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 15px 0 15px;
+    width: 13em;
+    width: 30vw;
+    overflow: hidden;
+}
+
+.article img {
+    /* width: 100%; */
+    object-fit: cover;
+    justify-content: center;
+    border-radius: 15px;
+    max-width: 100%;
+
+}
+
+.article-button  {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+.content-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #003744;
+    align-items: center;
+    padding: 4em;
+}
+
+.content {
+    margin: 1em;
+}
+.content img {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    border-radius: 15px;
+    align-self: center;
+}
+.content p {
+    color: white;
+    font-size: 1em;
+    height: auto;
+    text-align: center;
+}
+.content h3 {
+    color: #fff;
+}
+
+.social {
+    padding: 2em;
+}
+ .social h3 {
+    color:#41CEE0;
+    padding: 2em;
+}
+
+.social-links {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: stretch;
+    justify-content: center;
 }
 
 
-.flex-item {
+.footer-list {
+    display: flex;
     flex-direction: row;
-    flex-grow: 1;
-    width: auto;
-    align-items: center;
-    justify-content: space-between;
+    color: #41CEE0;
+    justify-content: center;
+}
+.footer-item a {
+    padding: 1em;
+    color: #41CEE0;
+}
+.footer-list li:hover {
+    background-color: #41CEE0;
+    border-radius: 25px;
+    transition: 0.3s ease;
 }
 
-.flex-item img {
-    width: 5em;
-    height: auto;
-    margin: 1em;
+.footer-list li {
+    padding: 8px 8px;
+}
+.footer-item a:hover {
+    color: white;
+}
+.copyright {
+    display: flex;
+    color: #41CEE0;
+    justify-content: center;
+}
+
+.copyright {
+    font-size: small;
+    padding: 1em;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,55,68,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #41CEE0;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #003744;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
